@@ -103,7 +103,6 @@ export default function YourBackground({ navigation }) {
           experience: newUserInfo.experience,
           skills: selectedSkills,
         };
-        console.log(newUserToBackend);
 
         // Create user in DB
         const response = await fetch(`${SPARK_API}/users/create`, {
@@ -115,7 +114,6 @@ export default function YourBackground({ navigation }) {
         });
 
         if (!response.ok) {
-          console.log(response);
           return;
         }
 
