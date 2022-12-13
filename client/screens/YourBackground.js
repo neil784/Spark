@@ -60,9 +60,6 @@ export default function YourBackground({ navigation }) {
   });
 
   function submitForm() {
-    console.log(newUserInfo);
-    console.log(fieldsValid);
-
     let allFieldsValid = true;
 
     let newFieldsValid = { ...fieldsValid };

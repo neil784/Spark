@@ -16,6 +16,10 @@ import { Text } from 'react-native';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyAGt1fZpD6-mds5S_pEOfkutEQfbp2a8ZE',
